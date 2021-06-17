@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+
+body{
+  
+  font-family: "Roboto Mono";
+  
+}
+.testimonial-bg{
+  background-color: black;
+}
+.testimonial-bg{
+    border: 10px solid #66e1e3;
+    padding: 80px 70px;
+    text-align: center;
+    position: relative;
+    width: 70%;
+
+    margin: auto;
+}
+.testimonial-bg:before{
+  font-family: "Material Icons";
+  content: "\e244";
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    background: black;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: -40px;
+    left: 2%;
+}
+.testimonial{
+    padding: 0 15px;
+}
+.testimonial .description{
+    font-size: 20px;
+    font-weight:400;
+    font-style: italic;
+    color: white;
+    line-height: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.testimonial .description:before{
+    content: "";
+    width: 75%;
+    border-top: 1px solid #ddd;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.testimonial .description:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    transform: translateX(-50%) rotate(45deg);
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 25px auto;
+    overflow: hidden;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    margin: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+.owl-theme .owl-controls{
+    background: black;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -34%;
+    right: 0;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    padding: 0;
+}
+.owl-prev:before,
+.owl-next:before{
+  font-family: "Material Icons";
+    content:"\e5e0";
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    font-weight: 900;
+}
+
+.owl-next:before{
+  content: "\e5e1";
+}
+@media only screen and (max-width:767px){
+    .testimonial-bg{ padding: 50px 40px; }
+    .owl-theme .owl-controls{ bottom: -22%; }
+}
+@media only screen and (max-width:480px){
+    .testimonial-bg:before{
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 40px;
+    }
+    .testimonial-bg{ padding: 30px 10px; }
+    .owl-theme .owl-controls{ bottom: -15%; }
+}
+@media only screen and (max-width:360px){
+    .testimonial .title,
+    .testimonial .post{
+        font-size: 16px;
+    }
+    .owl-theme .owl-controls{ bottom: -12%; }
+  }

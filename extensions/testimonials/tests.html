@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="tests.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+          <div class="testimonial-bg">
+              <div id="testimonial-slider" class="owl-carousel">
+                  <div class="testimonial">
+                      <p class="description">
+                        I think that your initiative is great. Thank you SO much!
+                      </p>
+                      <div class="pic">
+                          <img src="undraw_profile_pic_ic5t_gj.svg" alt="">
+                      </div>
+                      <h3 class="title">Gabriel Bickenbach</h3>
+                      <span class="post">Python and ML student</span>
+                  </div>
+
+                  <div class="testimonial">
+                      <p class="description">
+                        I liked the course very much, as I learned from a world that I had not seen before and had never thought of being able to understand, but I think it was so and it was enriching. Thank you very much for that.
+                      </p>
+                      <div class="pic">
+                          <img src="undraw_profile_pic_ic5t_oj.svg" alt="">
+                      </div>
+                      <h3 class="title">Mateo Hernández</h3>
+                      <span class="post">Python and ML student</span>
+                  </div>
+                  <div class="testimonial">
+                    <p class="description">
+                      Thank you all for having me in your class and teaching me about such an interesting topic! It was a really good time!
+                    </p>
+                    <div class="pic">
+                        <img src="undraw_profile_pic_ic5t.svg" alt="">
+                    </div>
+                    <h3 class="title">Camilo Becerra</h3>
+                    <span class="post">Python and ML student</span>
+                </div>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</div> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:true
+    });
+});</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script>
+  window.FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+</body>
+</html>
+
